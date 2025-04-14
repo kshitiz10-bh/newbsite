@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Product Store</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f7f7f7;
+      color: #333;
+    }
+    header {
+      background: #1a73e8;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .hero {
+      background: url('https://source.unsplash.com/1600x500/?store,products') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+      text-shadow: 1px 1px 4px black;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 2rem;
+    }
+    .product {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .product:hover {
+      transform: translateY(-5px);
+    }
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .product h3 {
+      margin: 0.5rem 0 0;
+    }
+    .price {
+      color: #1a73e8;
+      font-weight: bold;
+      margin: 0.5rem 0 1rem;
+    }
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Product Store</h1>
+    <p>Your one-stop shop for awesome stuff</p>
+  </header>
+
+  <div class="hero">
+    Discover Amazing Products
+  </div>
+
+  <section class="products">
+    <div class="product">
+      <img src="https://source.unsplash.com/400x300/?watch" alt="Product 1">
+      <h3>Stylish Watch</h3>
+      <p class="price">$49.99</p>
+    </div>
+    <div class="product">
+      <img src="https://source.unsplash.com/400x300/?shoes" alt="Product 2">
+      <h3>Running Shoes</h3>
+      <p class="price">$69.99</p>
+    </div>
+    <div class="product">
+      <img src="https://source.unsplash.com/400x300/?backpack" alt="Product 3">
+      <h3>Travel Backpack</h3>
+      <p class="price">$39.99</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 My Product Store. All rights reserved.
+  </footer>
+</body>
+</html>
